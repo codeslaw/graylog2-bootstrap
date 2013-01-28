@@ -7,7 +7,7 @@ graylog2_base=/var/graylog2
 graylog2_collection_size=650000000
 
 sudo apt-get install -y python-software-properties
-sudo add-apt-repository 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen'
+sudo echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' >> /etc/apt/sources.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
 sudo apt-get update
 
