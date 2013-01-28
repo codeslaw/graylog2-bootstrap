@@ -31,6 +31,8 @@ sudo tar -xvf $graylog2_web_interface
 folder=`echo $graylog2_web_interface | sed 's/.tar.gz//'`
 sudo ln -sf $graylog2_base/src/$folder $graylog2_base/web
 
+sudo gem install rcov -v 0.9.9
+sudo gem install bson_ext -v '1.1.1'
 sudo gem install rubygems-update
 sudo /var/lib/gems/1.8/gems/rubygems-update-1.8.25/bin/update_rubygems
 sudo gem install bundler
