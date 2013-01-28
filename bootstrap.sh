@@ -7,12 +7,12 @@ graylog2_base=/var/graylog2
 graylog2_collection_size=650000000
 
 sudo apt-get install -y python-software-properties
-sudo add-apt-repository 'deb http://downloads.mongodb.org/distros/ubuntu 10.4 10gen'
+sudo add-apt-repository 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen'
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
 sudo apt-get update
 
 env='DEBIAN_FRONTEND=noninteractive'
-for pkg in wget build-essential make rrdtool openjdk-6-jre ruby1.8 rubygems rake libopenssl-ruby libmysqlclient-dev ruby-dev libapache2-mod-passenger postfix mongodb-stable mysql-server
+for pkg in wget build-essential make rrdtool openjdk-6-jre ruby1.8 rubygems rake libopenssl-ruby libmysqlclient-dev ruby-dev libapache2-mod-passenger postfix mongodb mysql-server
 do
   sudo $env apt-get install -y $pkg
 done
