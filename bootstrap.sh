@@ -12,7 +12,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
 sudo apt-get update
 
 env='DEBIAN_FRONTEND=noninteractive'
-for pkg in wget build-essential make rrdtool openjdk-6-jre ruby1.8 rubygems rake libopenssl-ruby libmysqlclient-dev ruby-dev libapache2-mod-passenger postfix mongodb mysql-server
+for pkg in wget build-essential make rrdtool openjdk-6-jre ruby1.8-dev rubygems rake libopenssl-ruby libmysqlclient-dev ruby-dev libapache2-mod-passenger postfix mongodb mysql-server
 do
   sudo $env apt-get install -y $pkg
 done
