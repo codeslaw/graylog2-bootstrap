@@ -32,7 +32,7 @@ folder=`echo $graylog2_web_interface | sed 's/.tar.gz//'`
 sudo ln -sf $graylog2_base/src/$folder $graylog2_base/web
 
 sudo gem install rubygems-update
-sudo /var/lib/gems/1.8/bin/update_rubygems
+sudo /var/lib/gems/1.8/gems/rubygems-update-1.8.25/bin/update_rubygems
 sudo gem install bundler
 
 cd $graylog2_base/server
